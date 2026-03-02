@@ -4,21 +4,21 @@
 class Railwise < Formula
   desc "AI coding agent built for the terminal"
   homepage "https://github.com/railwise-cn/RAILWISE-CLI"
-  version "1.0.3"
+  version "1.0.4"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/railwise-cn/RAILWISE-CLI/releases/download/v1.0.3/railwise-darwin-x64.zip"
+      url "https://github.com/railwise-cn/RAILWISE-CLI/releases/download/v1.0.4/railwise-darwin-x64.zip"
       sha256 ""
       def install
         bin.install "railwise"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/railwise-cn/RAILWISE-CLI/releases/download/v1.0.3/railwise-darwin-arm64.zip"
-      sha256 "c409c8d7276385235c535452bfda4939493a801ca5df084b26fd699e8ce5680d"
+      url "https://github.com/railwise-cn/RAILWISE-CLI/releases/download/v1.0.4/railwise-darwin-arm64.zip"
+      sha256 "8781e7999d9dd3034165ea3b6db1c571c716a2f205d354c29f00a2df87af4ea7"
       def install
         bin.install "railwise"
       end
@@ -27,15 +27,15 @@ class Railwise < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/railwise-cn/RAILWISE-CLI/releases/download/v1.0.3/railwise-linux-x64.tar.gz"
-      sha256 "7abdf09827b81a224730c25762f46452edd320aba7bb82fcc0320790079483aa"
+      url "https://github.com/railwise-cn/RAILWISE-CLI/releases/download/v1.0.4/railwise-linux-x64.tar.gz"
+      sha256 "01d5292564785c269abb1a7c2f3fd661b57e6577d0324837e35c0ddb2968614c"
       def install
         bin.install "railwise"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/railwise-cn/RAILWISE-CLI/releases/download/v1.0.3/railwise-linux-arm64.tar.gz"
-      sha256 "fd703863a615b99f020589beb551a8239f03cbf2e56dd9f4c0a4587c864ad94c"
+      url "https://github.com/railwise-cn/RAILWISE-CLI/releases/download/v1.0.4/railwise-linux-arm64.tar.gz"
+      sha256 "e536de1ce607659d0c7837ddd2e31ceb5e6eee12ebe042178f5344dd03a52e92"
       def install
         bin.install "railwise"
       end
